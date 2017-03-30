@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--系统自带-->
+    <color name="colorPrimary">#88898b</color>
+    <!--状态栏颜色-->
+    <color name="colorPrimaryDark">#098ECE</color>
+    <!--主题风格-->
+    <color name="colorAccent">#098ECE</color>
+    <!--系统字体颜色-->
+    <color name="textColorPrimary">#474748</color>
+    <!--状态栏bar颜色-->
+    <color name="statusBarColor">#098ECE</color>
+    <!--窗体背景颜色-->
+    <!--<color name="windowBackground">#dadade</color>-->
+    <!-- 应用 -->
+    <color name="color_bleu">#03A9F4</color>
+    <color name="color_white">#ffffffff</color>
+    <color name="color_gray">#d2d2d2</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_light_gray">#e2dfdf</color>
+
+    <!-- 个人中心 -->
+    <color name="color_persona_bggray">#f1f1f1</color>
+    <color name="color_darlbleu">#098ECE</color>
+
+    <!-- 公用 -->
+    <color name="color_black">#252323</color>
+    <color name="color_darkgrey">#b3b3b3</color>
+    <color name="color_textgrey">#787879</color>
+    <color name="color_yellow">#f7ce54</color>
+    <color name="color_red">#f40511</color>
+    <color name="color_babybleu">#66b3ed</color>
+
+
+</resources>

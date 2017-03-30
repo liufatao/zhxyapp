@@ -1,0 +1,164 @@
+<resources>
+    <!--应用名称-->
+    <string name="app_name">精准化服务</string>
+
+    <!-- 应用模块 -->
+    <string name="str_apply">应用</string>
+    <string name="str_manage">管理</string>
+    <string name="str_search">搜索</string>
+    <string name="str_over">完成</string>
+
+    <!-- 个人中心 -->
+    <string name="str_persona_title">我的</string>
+    <string name="str_persona_share">我的分享</string>
+    <string name="str_persona_ticket">我的抢票</string>
+    <string name="str_persona_set">设置</string>
+    <string name="str_persona_out">退出登录</string>
+
+    <!-- 个人中心用户信息 -->
+    <string name="str_userinfo_title">个人信息</string>
+    <string name="str_userinfo_nickname">昵称</string>
+    <string name="str_userinfo_handname">头像</string>
+    <string name="str_userinfo_birthday">生日</string>
+    <string name="str_userinfo_section">学院</string>
+    <string name="str_userinfo_major">专业</string>
+    <string name="str_userinfo_phone">电话</string>
+    <string name="str_userinfo_QQ">QQ</string>
+    <string name="str_userinfo_erweima">二维码</string>
+    <string name="str_userinfo_save">保存</string>
+
+    <!-- 数据报告 -->
+    <string name="str_datareport_title">数据报告</string>
+
+    <!-- 工具字符 -->
+    <string name="str_tool_neterror">网络异常</string>
+    <string name="str_error">请输入正确的参数!</string>
+    <string name="str_null">不能为空!</string>
+    <string name="str_phone_error">请输入正确电话号码</string>
+
+    <!-- 设置 -->
+    <string name="str_set_title">设置</string>
+    <string name="str_set_updatepwd">修改密码</string>
+    <string name="str_set_hide">隐私</string>
+    <string name="str_set_feedback">意见反馈</string>
+    <string name="str_set_about">关于</string>
+
+    <!-- 关于 -->
+    <string name="str_about_title">关于</string>
+    <string name="str_about_score">去评分</string>
+    <string name="str_about_function">功能介绍</string>
+    <string name="str_about_notic">系统通知</string>
+    <string name="str_about_complaint">投诉</string>
+
+    <!-- 意见反馈 -->
+    <string name="str_feedback_title">意见反馈</string>
+    <string name="str_feedback_slogan">亲爱的同学(老师):</string>
+    <string name="str_feedback_content">您好!为了给你提供更好的服务，我们希望收集您使用APP时的建议或意见。对您的配合和支持表示衷心感谢!</string>
+    <string name="str_feedback_problem">*您对数据报告的整体满意度如何？</string>
+    <string name="str_feedback_verysatisfied">非常满意</string>
+    <string name="str_feedback_satisfied">满意</string>
+    <string name="str_feedback_commonly">一般</string>
+    <string name="str_feedback_dissatisfied">不满意</string>
+    <string name="str_feedback_verydissatisfied">非不满意</string>
+    <string name="str_feedback_edthint">填写你的建议</string>
+    <string name="str_feedback_contentone">我们会不定期邀请用户参与面对面的交流。如果您有意参与，请填写如下信息，方便我们与您联系，谢谢!</string>
+    <string name="str_feedback_contenttwo">(信息仅作为内部资料绝不外泄)</string>
+    <string name="str_feedback_phone">手机号:</string>
+    <string name="str_feedback_phonehint"> 请输入你的手机号码</string>
+    <string name="str_feedback_submit">提交</string>
+    <string name="str_feedback_maxlength">最大字数为200</string>
+    <string name="str_feedback_succeed">感谢你的支持,祝你生活愉快</string>
+    <string name="str_feedback_error">提交失败,请稍后重试</string>
+
+
+    <!-- 头像编辑 -->
+    <string name="str_popwindhandim_photograph">拍照</string>
+    <string name="str_popwindhandim_album">本地相册</string>
+    <string name="str_popwindhandim_cancel">取消</string>
+
+    <!--我的门票-->
+    <string name="str_ticket_title">我的门票</string>
+    <string name="str_ticket_goto">去抢票</string>
+    <string name="str_ticket_workable">可使用</string>
+    <string name="str_ticket_outdate">已使用</string>
+
+    <!--我的门票item-->
+    <string name="str_ticket_cathedraname">讲座名称:</string>
+    <string name="str_ticket_cathedratiem">讲座时间:</string>
+    <string name="str_ticket_cathedraadder">讲座地点:</string>
+
+    <!--门票详情-->
+    <string name="str_ticketdetails_title">门票详情</string>
+    <string name="str_ticketdetails_speechmaket">讲座人:</string>
+    <string name="str_ticketdetails_declare">在开始讲座前扫描二维码可入场</string>
+    <string name="str_ticketdetails_serialnumber">序列号:562568528</string>
+    <string name="str_ticketdetails_authcode">验证码:562568528</string>
+
+    <!--首页-->
+    <string name="str_home_report">报告</string>
+    <string name="str_home_apply">应用</string>
+    <string name="str_home_home">首页</string>
+    <string name="str_home_message">消息</string>
+    <string name="str_home_personal">我的</string>
+    <string name="str_home_evaluation">职业测评</string>
+    <string name="str_home_aim">我的目标</string>
+    <string name="str_home_aimhall">目标广场</string>
+    
+    <string name="str_home_graduate">我要毕业</string>
+    <string name="str_home_study_plan">学习计划</string>
+    <string name="str_home_mygrade">我的成绩</string>
+    <string name="str_home_guakejinbao">挂科预警</string>
+    
+    <string name="str_home_everyday_aim">每日目标</string>
+    <string name="str_home_breakfast">健康早餐</string>
+    <string name="str_home_course_singir">课程签到</string>
+    <string name="str_home_exercise">坚持运动</string>
+    <string name="str_home_guiqing">按时归寝</string>
+
+    <string name="str_home_myaim">自主目标</string>
+    <string name="str_home_more">查看更多</string>
+
+    <!--消息中心-->
+    <string name="str_message_name">消息</string>
+    <string name="str_message_addressbook">通讯录</string>
+    <string name="title_activity_user_info">个人资料</string>
+
+    <!--通讯录-->
+    <string name="str_addressbook_newfriend">新朋友</string>
+    <string name="str_addressbook_tencher">教师通讯录</string>
+    <string name="str_addressbook_class">我的班级</string>
+    <string name="str_addressbook_schoolnews">学校通知</string>
+
+
+    <!--用户资料二维码模块-->
+    <string name="str_userinfo_erweima_title">二维码</string>
+    <string name="str_userinfo_erweima_introduce">扫一扫添加好友</string>
+
+    <!--应用引导页-->
+    <string name="str_into">立即进入</string>
+    <!--登陆-->
+    <string name="str_login_account">请输入学号/教师号</string>
+    <string name="str_login_password">请输入密码</string>
+    <string name="str_login_login">登录</string>
+    <string name="str_login_seekpassword">忘记密码?</string>
+    <string name="str_login_account_error">账号不能为空</string>
+    <string name="str_login_accountpasswor_error">密码长度6-16</string>
+    <!--公用用户名-->
+    <string name="str_username">王大锤</string>
+
+
+    <!--极光测试-->
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+
+
+</resources>

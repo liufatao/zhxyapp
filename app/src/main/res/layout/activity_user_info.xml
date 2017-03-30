@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    tools:context="com.yunhuakeji.app.ui.activity.UserInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ly_persona_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_bleu"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:onClick="back"
+                android:padding="@dimen/d_10"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/d_10"
+                android:layout_marginTop="@dimen/d_10"
+                android:text="@string/str_userinfo_title"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/s_20" />
+        </RelativeLayout>
+        <!-- 头像 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_handimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_10"
+            android:background="@drawable/selector_personal_click">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/d_10"
+                android:text="@string/str_userinfo_handname" />
+
+            <ImageView
+                android:id="@+id/img_userinfo_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/d_10"
+                android:src="@mipmap/ico_right" />
+
+            <com.yunhuakeji.app.view.RoundImageView
+                android:id="@+id/img_userinfo_userphoto"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignEnd="@+id/img_userinfo_right"
+                android:layout_margin="@dimen/d_10"
+                android:src="@mipmap/ic_launcher" />
+        </RelativeLayout>
+        <!-- 昵称 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_10"
+            android:padding="@dimen/d_10"
+            android:background="@drawable/selector_personal_click">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/d_10"
+                android:drawablePadding="@dimen/d_10"
+                android:drawableStart="@mipmap/ico_userinfo_nickname"
+                android:gravity="center"
+                android:paddingBottom="@dimen/d_10"
+                android:paddingTop="@dimen/d_10"
+                android:text="@string/str_userinfo_nickname" />
+
+            <TextView
+                android:id="@+id/txt_userinfo_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/d_10"
+                android:drawableEnd="@mipmap/ico_right"
+                android:drawablePadding="@dimen/d_10"
+                android:gravity="center"
+                android:text="王大锤" />
+        </RelativeLayout>
+        <!-- 生日 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_05"
+            android:padding="@dimen/d_10"
+            android:background="@drawable/selector_personal_click">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/d_10"
+                android:drawablePadding="@dimen/d_5"
+                android:drawableStart="@mipmap/ico_userinfo_birthday"
+                android:gravity="center"
+                android:paddingBottom="@dimen/d_10"
+                android:paddingTop="@dimen/d_10"
+                android:text="@string/str_userinfo_birthday" />
+
+            <TextView
+                android:id="@+id/txt_userinfo_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/d_10"
+                android:text="2017.20.03" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_10"
+            android:padding="@dimen/d_10"
+            android:background="@drawable/selector_personal_click">
+
+            <!-- 部门 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/d_10"
+                android:drawablePadding="@dimen/d_5"
+                android:drawableStart="@mipmap/ico_userinfo_section"
+                android:gravity="center"
+                android:paddingBottom="@dimen/d_10"
+                android:paddingTop="@dimen/d_10"
+                android:text="@string/str_userinfo_section" />
+
+            <TextView
+                android:id="@+id/txt_userinfo_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/d_10"
+                android:text="小卖部" />
+        </RelativeLayout>
+
+        <!-- 专业 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_05"
+            android:padding="@dimen/d_10"
+            android:background="@drawable/selector_personal_click">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/d_10"
+                android:drawablePadding="@dimen/d_5"
+                android:drawableStart="@mipmap/ico_userinfo_major"
+                android:gravity="center"
+                android:paddingBottom="@dimen/d_10"
+                android:paddingTop="@dimen/d_10"
+                android:text="@string/str_userinfo_major" />
+
+            <TextView
+                android:id="@+id/txt_userinfo_major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/d_10"
+                android:text="计算机" />
+        </RelativeLayout>
+        <!-- 电话 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_05"
+            android:padding="@dimen/d_10"
+            android:background="@drawable/selector_personal_click">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/d_10"
+                android:drawablePadding="@dimen/d_5"
+                android:drawableStart="@mipmap/ico_userinfo_phone"
+                android:gravity="center"
+                android:paddingBottom="@dimen/d_10"
+                android:paddingTop="@dimen/d_10"
+                android:text="@string/str_userinfo_phone" />
+
+            <TextView
+                android:id="@+id/txt_userinfo_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="11dp"
+                android:drawableEnd="@mipmap/ico_right"
+                android:drawablePadding="@dimen/d_5"
+                android:gravity="center"
+                android:text="6865699599" />
+        </RelativeLayout>
+        <!-- QQ -->
+
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_qq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_05"
+            android:padding="@dimen/d_10"
+            android:background="@drawable/selector_personal_click">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/d_10"
+                android:drawablePadding="@dimen/d_5"
+                android:drawableStart="@mipmap/ico_userinfo_qq"
+                android:gravity="center"
+                android:paddingBottom="@dimen/d_10"
+                android:paddingTop="@dimen/d_10"
+                android:text="@string/str_userinfo_QQ" />
+
+            <TextView
+                android:id="@+id/txt_userinfo_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/d_10"
+                android:drawableEnd="@mipmap/ico_right"
+                android:drawablePadding="@dimen/d_5"
+                android:gravity="center"
+                android:text="6865699599" />
+        </RelativeLayout>
+        <!-- 二维码 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_erweima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_10"
+            android:padding="@dimen/d_10"
+            android:background="@drawable/selector_personal_click">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/d_10"
+                android:drawablePadding="@dimen/d_5"
+                android:drawableStart="@mipmap/ico_userinfo_erweima"
+                android:gravity="center"
+                android:paddingBottom="@dimen/d_10"
+                android:paddingTop="@dimen/d_10"
+                android:text="@string/str_userinfo_erweima" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/d_10"
+                android:drawableEnd="@mipmap/ico_right"
+                android:drawablePadding="@dimen/d_5"
+                android:gravity="center" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_persona_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d_40"
+            android:layout_marginEnd="@dimen/d_20"
+            android:layout_marginStart="@dimen/d_20"
+            android:layout_marginTop="@dimen/d_30"
+            android:background="@drawable/selector_personal_rounded_click"
+            android:text="@string/str_persona_out"
+            android:textColor="@color/color_white" />
+    </LinearLayout>
+</ScrollView>
+
+

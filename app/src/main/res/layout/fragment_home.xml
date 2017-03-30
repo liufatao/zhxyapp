@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yunhuakeji.app.ui.fragment.HomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--广告-->
+        <include
+            layout="@layout/include_home_advertisement"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <!--学生功能-->
+        <include layout="@layout/include_home_student_tool" />
+        <!--自主目标-->
+        <include layout="@layout/include_home_myaim" />
+    </LinearLayout>
+    <!--悬浮菜单-->
+    <include layout="@layout/layout_floatingmenu" />
+</RelativeLayout>

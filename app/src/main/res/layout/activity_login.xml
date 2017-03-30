@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yunhuakeji.app.ui.activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ico_load_big" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtinputlayout_login_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_15"
+            android:layout_marginEnd="@dimen/d_20"
+            android:layout_marginStart="@dimen/d_20"
+            android:hint="@string/str_login_account">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_login_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/d_8"
+                android:text="21041029"
+                android:background="@drawable/shape_rectangular_border"
+                android:drawableStart="@mipmap/ico_login_account"
+                 />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtinputlayout_login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/d_20"
+            android:layout_marginStart="@dimen/d_20"
+            android:layout_marginTop="@dimen/d_10"
+            android:hint="@string/str_login_password">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_login_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rectangular_border"
+                android:drawableStart="@mipmap/ico_login_pwd"
+                android:inputType="textPassword"
+                android:text="123456"
+                android:padding="@dimen/d_8" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/d_40"
+            android:layout_marginStart="@dimen/d_40"
+            android:layout_marginTop="@dimen/d_40"
+            android:background="@drawable/shape_radius_border_bgbule"
+            android:text="@string/str_login_login"
+            android:textColor="@color/color_white" />
+
+        <TextView
+            android:id="@+id/txt_login_seekpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal|right"
+            android:layout_marginEnd="@dimen/d_40"
+            android:layout_marginTop="@dimen/d_10"
+            android:padding="@dimen/d_10"
+            android:text="@string/str_login_seekpassword"
+            android:textColor="@color/color_bleu" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

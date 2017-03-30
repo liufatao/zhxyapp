@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_gray"
+    tools:context="com.yunhuakeji.app.ui.activity.TiacketDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bleu">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="clip_vertical"
+            android:onClick="back"
+            android:padding="@dimen/d_10"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_10"
+            android:text="@string/str_ticketdetails_title"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/s_20" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_15"
+            android:layout_marginTop="@dimen/d_20"
+            android:layout_marginBottom="@dimen/d_20"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_ticketdetails_cathedraname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black"
+                android:layout_marginTop="@dimen/d_20"
+                android:textSize="@dimen/s_20"
+                android:text="戒除网瘾"/>
+            <TextView
+                android:id="@+id/txt_ticketdetails_cathedrtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_8"
+                android:textSize="@dimen/s_12"
+                android:textColor="@color/color_red"
+                android:text="2014-5-14 21.12.00"/>
+            <TextView
+                android:id="@+id/txt_ticketdetails_cathedradder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/s_12"
+                android:layout_marginTop="@dimen/d_8"
+                android:text="地址:学术报告厅"/>
+            <TextView
+                android:id="@+id/txt_ticketdetails_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/s_12"
+                android:layout_marginTop="@dimen/d_8"
+                android:layout_marginBottom="@dimen/d_10"
+                android:text="讲座人:杨永信"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/img_ticketdetails_describe"
+                android:layout_width="@dimen/d_80"
+                android:layout_height="@dimen/d_100"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/d_15"
+                android:src="@mipmap/ic_launcher" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:layout_marginTop="@dimen/d_1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_15"
+            android:layout_marginTop="@dimen/d_10"
+            android:text="@string/str_ticketdetails_declare"
+            />
+        <ImageView
+            android:id="@+id/img_ticketdetails_erweima"
+            android:layout_width="@dimen/d_150"
+            android:layout_height="@dimen/d_150"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/timg"
+            />
+        <TextView
+            android:id="@+id/txt_ticketdetails_serialnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d_5"
+            android:layout_below="@+id/img_ticketdetails_erweima"
+            android:text="@string/str_ticketdetails_serialnumber"/>
+        <TextView
+            android:id="@+id/txt_ticketdetails_authcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_ticketdetails_serialnumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d_5"
+            android:text="@string/str_ticketdetails_authcode"/>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

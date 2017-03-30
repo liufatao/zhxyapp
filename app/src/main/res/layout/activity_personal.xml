@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_persona_bggray"
+    tools:context="com.yunhuakeji.app.ui.activity.PersonalActivity">
+    <LinearLayout
+        android:id="@+id/ly_persona_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bleu"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_10"
+            android:text="@string/str_persona_title"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/s_20" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_personal_info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_80"
+            android:layout_marginTop="@dimen/d_10"
+            android:background="@drawable/selector_personal_click" >
+
+            <ImageView
+                android:id="@+id/img_personal_head"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_launcher"
+                android:layout_marginStart="@dimen/d_10"
+                android:padding="@dimen/d_15" />
+
+            <TextView
+                android:id="@+id/txt_personal_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/d_10"
+                android:layout_toRightOf="@+id/img_personal_head"
+                android:ellipsize="end"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:text="王大锤" />
+
+            <TextView
+                android:id="@+id/txt_personal_userId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_personal_username"
+                android:layout_marginStart="@dimen/d_10"
+                android:layout_marginTop="@dimen/d_5"
+                android:layout_toRightOf="@+id/img_personal_head"
+                android:text="我的账号：123456"
+                android:textSize="@dimen/s_12" />
+
+            <ImageView
+                android:id="@+id/img_personal_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/d_5"
+                android:layout_marginEnd="@dimen/d_10"
+                android:src="@mipmap/ico_right" />
+
+            <ImageView
+                android:layout_width="@dimen/d_40"
+                android:layout_height="@dimen/d_40"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/img_personal_right"
+                android:src="@mipmap/ico_personal_erweima" />
+        </RelativeLayout>
+        <!-- 我的分享 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_personal_share"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/rl_personal_info"
+            android:layout_marginTop="@dimen/d_10"
+            android:background="@drawable/selector_personal_click" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/d_10"
+                android:layout_marginStart="@dimen/d_10"
+                android:gravity="center"
+                android:drawableStart="@mipmap/ico_personal_share"
+                android:drawablePadding="@dimen/d_8"
+                android:paddingTop="@dimen/d_10"
+                android:text="@string/str_persona_share" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/d_10"
+                android:src="@mipmap/ico_right" />
+        </RelativeLayout>
+        <!-- 我的积分 已隐藏 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_persona_ticket"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/rl_personal_share"
+            android:layout_marginTop="@dimen/d_1"
+            android:visibility="gone"
+            android:background="@drawable/selector_personal_click" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/d_10"
+                android:layout_marginStart="@dimen/d_10"
+                android:drawableStart="@mipmap/ico_personal_share"
+                android:drawablePadding="@dimen/d_5"
+                android:paddingTop="@dimen/d_10"
+                android:text="@string/str_persona_ticket" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/d_10"
+                android:src="@mipmap/ico_right" />
+        </RelativeLayout>
+        <!-- 设置 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_persona_set"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/rl_persona_ticket"
+            android:layout_marginTop="@dimen/d_1"
+            android:background="@drawable/selector_personal_click" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/d_10"
+                android:layout_marginStart="@dimen/d_10"
+                android:drawableStart="@mipmap/ico_personal_set"
+                android:gravity="center"
+                android:drawablePadding="@dimen/d_5"
+                android:paddingTop="@dimen/d_10"
+                android:text="@string/str_persona_set" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/d_10"
+                android:src="@mipmap/ico_right" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_persona_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/d_40"
+            android:layout_marginEnd="@dimen/d_20"
+            android:layout_marginStart="@dimen/d_20"
+            android:background="@drawable/selector_personal_rounded_click"
+            android:text="@string/str_persona_out"
+            android:textColor="@color/color_white" />
+
+    </RelativeLayout>
+</RelativeLayout>

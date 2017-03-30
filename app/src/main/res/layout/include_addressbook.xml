@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+    <!--新朋友-->
+    <LinearLayout
+        android:id="@+id/ly_addressbook_newfriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_personal_click"
+        android:orientation="vertical"
+        android:padding="@dimen/d_8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_10"
+                android:src="@mipmap/ico_addressbook_newfriend" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/d_15"
+                android:text="@string/str_addressbook_newfriend"
+                android:textSize="@dimen/s_18" />
+
+            <com.yunhuakeji.app.view.DragPointView
+                android:id="@+id/dp_addressbook_newfriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/d_5"
+                android:paddingStart="@dimen/d_4"
+                android:text="6"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/s_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_1"
+            android:layout_marginStart="@dimen/d_70"
+            android:background="@color/color_gray" />
+
+    </LinearLayout>
+
+    <!--教师通讯录-->
+    <LinearLayout
+        android:id="@+id/ly_addressbook_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_personal_click"
+        android:orientation="vertical"
+        android:padding="@dimen/d_8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_10"
+                android:src="@mipmap/ico_addressbook_teacher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/d_15"
+                android:text="@string/str_addressbook_tencher"
+                android:textSize="@dimen/s_18" />
+
+            <com.yunhuakeji.app.view.DragPointView
+                android:id="@+id/dp_addressbook_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/d_5"
+                android:paddingStart="@dimen/d_4"
+                android:text="6"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/s_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_1"
+            android:layout_marginStart="@dimen/d_70"
+            android:background="@color/color_gray" />
+
+    </LinearLayout>
+
+    <!--我的班级-->
+    <LinearLayout
+        android:id="@+id/ly_addressbook_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_personal_click"
+        android:orientation="vertical"
+        android:padding="@dimen/d_8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_10"
+                android:src="@mipmap/ico_addressbook_class" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/d_15"
+                android:text="@string/str_addressbook_class"
+                android:textSize="@dimen/s_18" />
+
+            <com.yunhuakeji.app.view.DragPointView
+                android:id="@+id/dp_addressbook_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/d_5"
+                android:paddingStart="@dimen/d_4"
+                android:text="6"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/s_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_1"
+            android:layout_marginStart="@dimen/d_70"
+            android:background="@color/color_gray" />
+
+
+    </LinearLayout>
+
+    <!--学校通知-->
+    <LinearLayout
+        android:id="@+id/ly_addressbook_schoolnews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d_5"
+        android:background="@drawable/selector_personal_click"
+        android:orientation="horizontal"
+        android:padding="@dimen/d_10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_10"
+            android:src="@mipmap/ico_addressbook_schoolnews" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/d_15"
+            android:text="@string/str_addressbook_schoolnews"
+            android:textSize="@dimen/s_18" />
+
+        <com.yunhuakeji.app.view.DragPointView
+            android:id="@+id/dp_addressbook_schoolnews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/d_5"
+            android:paddingStart="@dimen/d_4"
+            android:text="6"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/s_12" />
+    </LinearLayout>
+
+</LinearLayout>

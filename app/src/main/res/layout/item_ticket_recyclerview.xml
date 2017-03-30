@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/d_8"
+    android:id="@+id/ly_ticket"
+    android:background="@drawable/selector_personal_click"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="@dimen/d_100"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginEnd="@dimen/fd_40"
+            android:background="@drawable/shape_dotted"
+            android:layerType="software"
+            android:rotation="90" />
+
+        <TextView
+            android:id="@+id/txt_ticket_seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_roundness_bg"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/d_10"
+            android:text="座"
+            android:textColor="@color/color_white" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_ticket_cathedraname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_5"
+            android:text="@string/str_ticket_cathedraname"
+            android:textColor="@color/color_black" />
+
+        <TextView
+            android:id="@+id/txt_ticket_cathedrtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_5"
+            android:text="@string/str_ticket_cathedratiem"
+            android:textSize="@dimen/s_12" />
+
+        <TextView
+            android:id="@+id/txt_ticket_cathedradder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_5"
+            android:text="@string/str_ticket_cathedraadder"
+            android:layout_marginBottom="@dimen/d_5"
+            android:textSize="@dimen/s_12" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_ticket_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/d_10"
+            android:text="@string/str_ticket_workable"
+            android:textColor="@color/color_yellow" />
+    </RelativeLayout>
+
+
+</LinearLayout>

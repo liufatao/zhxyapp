@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_floatbutton"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    >
+
+    <com.yunhuakeji.app.widget.FloatingDraftButton
+        android:id="@+id/floatingActionButton"
+        borderWidth="0dp"
+        fabSize="normal"
+        pressedTranslationZ="12dp"
+        rippleColor="@color/color_babybleu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/d_10"
+        android:src="@mipmap/ico_apply_add"
+        android:backgroundTint="@color/color_bleu"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton_liveness"
+        borderWidth="0dp"
+        elevation="6dp"
+        fabSize="mini"
+        pressedTranslationZ="12dp"
+        rippleColor="@color/color_babybleu"
+        android:src="@mipmap/ico_addressbook_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton_2"
+        borderWidth="0dp"
+        elevation="6dp"
+        fabSize="mini"
+        pressedTranslationZ="12dp"
+        rippleColor="@color/color_babybleu"
+        backgroundTint="@color/color_bleu"
+        android:src="@mipmap/ico_addressbook_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+
+        />
+
+
+</RelativeLayout>

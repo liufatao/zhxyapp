@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+        <ImageView
+            android:id="@+id/img_news_item_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_10"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginBottom="@dimen/d_10"
+            android:src="@mipmap/ico_addressbook_newfriend"/>
+        <TextView
+            android:id="@+id/txt_news_item_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black"
+            android:layout_marginTop="@dimen/d_10"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_toEndOf="@+id/img_news_item_head"
+            android:textSize="@dimen/s_18"
+            android:text="就业通知"/>
+
+
+        <TextView
+            android:id="@+id/txt_news_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_5"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_toEndOf="@+id/img_news_item_head"
+            android:layout_below="@+id/txt_news_item_nickname"
+            android:textSize="@dimen/s_12"
+            android:textColor="@color/color_darkgrey"
+            android:maxEms="20"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="就业通知:人罪犯健康的肌肤快速的净空法师解放了快速的减肥了快速的减肥克赖斯基地方克赖斯基卡德罗夫及索科洛夫进口零食减肥卡拉斯京地方即可累计发卡量撒娇的快乐"/>
+
+        <com.yunhuakeji.app.view.DragPointView
+            android:id="@+id/txt_news_item_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_5"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/d_10"
+            android:layout_below="@+id/txt_news_item_nickname"
+            android:layout_marginBottom="@dimen/d_10"
+            android:textSize="@dimen/s_12"
+            android:maxEms="20"
+            android:maxLines="1"
+            android:padding="@dimen/d_3"
+            android:textColor="@color/color_white"
+            android:text="6"/>
+        <TextView
+            android:id="@+id/txt_news_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-11-28"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/d_10"
+            android:layout_marginEnd="@dimen/d_10"
+            android:textSize="@dimen/s_12"/>
+
+</RelativeLayout>

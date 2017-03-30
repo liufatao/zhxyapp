@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_persona_bggray"
+    tools:context="com.yunhuakeji.app.ui.activity.TicketActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bleu"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_vertical"
+            android:onClick="back"
+            android:src="@mipmap/back"
+            android:padding="@dimen/d_10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_10"
+            android:text="@string/str_ticket_title"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/s_20" />
+
+        <TextView
+            android:id="@+id/txt_ticket_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/color_white"
+            android:text="@string/str_ticket_goto"
+            android:padding="@dimen/d_15"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_40"
+        android:orientation="horizontal"
+        android:background="@color/color_white">
+        <TextView
+            android:id="@+id/txt_ticket_workable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/d_60"
+            android:layout_gravity="center"
+            android:textColor="@color/color_bleu"
+            android:text="@string/str_ticket_workable"/>
+
+        <TextView
+            android:id="@+id/txt_ticket_outdata"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/d_60"
+            android:textColor="@color/color_black"
+            android:layout_gravity="center_vertical"
+            android:text="@string/str_ticket_outdate"/>
+    </LinearLayout>
+<android.support.v4.view.ViewPager
+    android:id="@+id/vp_ticket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yunhuakeji.app.ui.fragment.MessageFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bleu">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/d_10"
+            android:background="@drawable/shape_radius_border_transparent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_message_message"
+                android:layout_width="@dimen/d_70"
+                android:layout_height="@dimen/d_30"
+                android:layout_margin="@dimen/d_05"
+                android:layout_marginEnd="@dimen/d_05"
+                android:background="@drawable/shape_radius_border_left_white"
+                android:gravity="center"
+                android:text="@string/str_message_name" />
+
+            <TextView
+                android:id="@+id/txt_message_addressbook"
+                android:layout_width="@dimen/d_70"
+                android:layout_height="@dimen/d_30"
+                android:layout_margin="@dimen/d_05"
+                android:layout_marginStart="@dimen/d_05"
+                android:gravity="center"
+                android:text="@string/str_message_addressbook"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_message_addfriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/d_8"
+            android:src="@mipmap/ico_add_friend" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+</LinearLayout>
